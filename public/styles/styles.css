@@ -84,3 +84,20 @@ ul{
     bottom: 10px;
     right: 20px;
 }
+
+/* Groeperen op kleur */
+.front-bg:is([data-letter="A"], [data-letter="E"], [data-letter="I"], [data-letter="M"], [data-letter="Q"], [data-letter="U"], [data-letter="Y"]) {
+    background-color: #C90522;
+}
+  
+.front-bg:is([data-letter="B"], [data-letter="F"], [data-letter="J"], [data-letter="N"], [data-letter="R"], [data-letter="V"], [data-letter="Z"]) {
+    background-color: #009900;
+}
+  
+.front-bg:is([data-letter="C"], [data-letter="G"], [data-letter="K"], [data-letter="O"], [data-letter="S"], [data-letter="W"]) {
+    background-color: #E5CA22;
+}
+  
+.front-bg:is([data-letter="D"], [data-letter="H"], [data-letter="L"], [data-letter="P"], [data-letter="T"], [data-letter="X"]) {
+    background-color: #007BFF;
+}
