@@ -3,11 +3,12 @@
 <h1>Students</h1>
   <ul class="uno-card-wrapper">
     {% for person in persons %}
+      {% assign first_letter = person.name | slice: 0,1 | upcase %}
       <li class="uno-card">
         <a href="/student/{{ person.id }}" class="uno-card-link">
         <article class="card-inner">
           <section class="front">
-            <figure class="front-bg">
+            <figure class="front-bg" data-letter="{{ first_letter }}">
               <h2 class="person-name">{{ person.name }}</h2>
             </figure>
           </section>
